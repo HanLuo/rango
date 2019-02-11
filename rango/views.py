@@ -8,3 +8,8 @@ def index(request):
     context_dict = {'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"}
     # return HttpResponse('Rango!')
     return render(request, 'rango/index.html', context=context_dict)
+
+
+def about(request):
+    context_dict = {"first": "shen", "second": "wei"}
+    return render(request, 'rango/about.html', context=context_dict)
