@@ -1,10 +1,12 @@
 python manage.py runserver
 
+// 运行迁移
 python manage.py migrate
 <python manage.py migrate --run-syncdb>
 
 python manage.py createsuperuser
 
+// 生成迁移
 python manage.py makemigrations rango
 
 python manage.py sqlmigrate rango 0001
