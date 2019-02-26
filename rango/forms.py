@@ -17,14 +17,15 @@ class PageForm(forms.ModelForm):
     views = forms.IntegerField(widget=forms.HiddenInput(), initial=0)
     data = forms.DateField(required=False)
 
-    def clean(self):
-        cleaned_data = self.cleaned_data
-        url = cleaned_data.get('url')
+    # def clean(self):
+    #     cleaned_data = self.cleaned_data
+    #     url = cleaned_data.get('url')
+    #     print (url)
 
-        if url and not url.startswith('http://'):
-            url = 'http://' + url
-            cleaned_data['url'] = url
-            return cleaned_data
+    #     if url and not url.startswith('https://'):
+    #         url = 'http://' + url
+    #         cleaned_data['url'] = url
+    #         return cleaned_data
 
     class Meta:
         model = Page
