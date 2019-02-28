@@ -1,9 +1,9 @@
 from django import template
-from tango.models import Category
+from rango.models import Category
 
 
 register = template.Library()
 
-@register.inclusion_tag('tango.cats.html')
+@register.inclusion_tag('rango/cats.html')
 def get_category_list():
     return {'cats':Category.objects.all()}
