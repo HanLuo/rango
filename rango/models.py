@@ -40,7 +40,7 @@ class Page(models.Model):
 
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     # 增加的属性
     website = models.URLField(blank=True)

@@ -1,5 +1,6 @@
 from django import forms
-from rango.models import Page, Category
+from django.contrib.auth.models import User
+from rango.models import Page, Category, UserProfile
 
 class CategoryForm(forms.ModelForm):
     name = forms.CharField(max_length=128, help_text = "please enter the category name.")
@@ -31,3 +32,17 @@ class PageForm(forms.ModelForm):
         model = Page
         exclude = ('category',)
         # fields = ('title, url, views')
+
+class UserForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput())
+
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password')
+
+
+class UserProfileForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        # 在表单中显示或者排除的字段
+        fields = ('webiste', 'picture')
