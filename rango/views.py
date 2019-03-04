@@ -8,6 +8,9 @@ from rango.forms import CategoryForm
 from rango.forms import PageForm
 from rango.forms import UserForm
 from rango.forms import UserProfileForm
+from django.contrib.auth import authenticate, login
+from django.http import HttpResponseRedirect, HttpResponse
+from django.urls import reverse
 
 
 def index(request):
@@ -111,3 +114,31 @@ def register(request):
 
     # 根据上下文渲染模板
     return render(request, 'rango/register.html', {'user_form': user_form, 'profile_form':profile_form, 'registered':registered})
+
+# 登录视图
+def user_login(request):
+
+    if request.method == "POST":
+
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        # 返回一个User对象 
+        user = authenticate(username=username, password=password)
+
+        if user:
+            if user.is_active:
+                login(request, user) 
+                # 状态码 302 不是表示成功的 200 reverse 函数找到index的url
+                return HttpResponseRedirect(reverse('index'))
+            else:
+                # 账户未激活，禁止登录
+                return HttpResponse("Your Rango account is disabled.")
+        else:
+            # 提供的账户或者密码有问题
+            print ("Invalid login details: {0}, {1}".format(username, password))
+            return HttpResponse("Invalid login details supplied.")
+    # 不是Http Post 请求， 显示登录表单
+    else:
+        return render(request, 'rango/login.html', {})
+
