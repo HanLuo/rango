@@ -45,4 +45,4 @@ class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         # 在表单中显示或者排除的字段
-        fields = ('webiste', 'picture')
+        fields = ('website', 'picture')

@@ -6,6 +6,8 @@ from rango.models import Category
 from rango.models import Page
 from rango.forms import CategoryForm
 from rango.forms import PageForm
+from rango.forms import UserForm
+from rango.forms import UserProfileForm
 
 
 def index(request):
@@ -74,3 +76,38 @@ def add_page(request, category_name_slug):
             print(form.errors)
     context_dict = {'form': form, 'category': category}
     return render(request, 'rango/add_page.html', context_dict)
+
+def register(request):
+    registered = False
+
+    if request.method == "POST":
+        user_form = UserForm(data = request.POST)
+        profile_form = UserProfileForm(data = request.POST)
+
+        if user_form.is_valid() and profile_form.is_valid():
+            # 把UserForm中的数据存入数据库
+            user = user_form.save()
+
+            # 使用set_passwd 方法计算密码哈希值
+            # 然后更新user对象
+            user.set_password(user.password)
+            user.save()
+
+            # 处理UserProfile实例 因为要自行处理user属性，所以设定 commit=False
+            # 延迟保存模型 以防止出现完整性问题
+            profile = profile_form.save(commit=False)
+            profile.user = user
+
+            if 'picture' in request.FILES:
+                profile.picture = request.FILES['picture']
+
+            profile.save()
+            registered = True
+        else:
+            print (user_form.errors, profile_form.errors)
+    else:
+        user_form = UserForm()
+        profile_form = UserProfileForm()
+
+    # 根据上下文渲染模板
+    return render(request, 'rango/register.html', {'user_form': user_form, 'profile_form':profile_form, 'registered':registered})
