@@ -11,6 +11,8 @@ from rango.forms import UserProfileForm
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 
 def index(request):
@@ -129,7 +131,7 @@ def user_login(request):
         if user:
             if user.is_active:
                 login(request, user) 
-                # 状态码 302 不是表示成功的 200 reverse 函数找到index的url
+                # 状态码 302 不是表示成功的200 reverse 函数找到index的url
                 return HttpResponseRedirect(reverse('index'))
             else:
                 # 账户未激活，禁止登录
@@ -142,3 +144,22 @@ def user_login(request):
     else:
         return render(request, 'rango/login.html', {})
 
+# 限制登录访问
+def some_view(request):
+    if not request.user.is_authenticated():
+        return HttpResponse('You are logged in.')
+    else:
+        return HttpResponse("You are not logged in.")
+
+
+# 使用装饰器限制访问 (类似于中间件的功能)
+@login_required
+def restricted(request):
+    return HttpResponse("Since you're logged in, you can see this text!")
+
+
+# 退出功能
+@login_required
+def user_logout(request):
+    logout(request)
+    return HttpResponseRedirect(reverse('index'))
