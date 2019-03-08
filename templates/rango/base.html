@@ -22,14 +22,13 @@
                 {% if user.is_authenticated %}
                     <li><a href="{% url 'logout' %}">退出</a></li>
                     <li><a href="{% url 'restricted' %}">查看</a></li>
+                    <li><a href="{% url 'add_category' %}">添加新的分类</a></li>
                 {% else %}
                     <li><a href="{% url 'register' %}">注册</a></li>
                     <li><a href="{% url 'login' %}">登录</a></li>
                 {% endif %}
-                <li><a href="{% url 'add_category' %}">Add New Category</a></li>
                 <li><a href="{% url 'about' %} ">About</a></li>
                 <li><a href="{% url 'index' %} ">Index</a></li>
-
             </ul>
         </div>
 
