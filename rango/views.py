@@ -84,6 +84,7 @@ def add_page(request, category_name_slug):
     context_dict = {'form': form, 'category': category}
     return render(request, 'rango/add_page.html', context_dict)
 
+# 注册
 def register(request):
     registered = False
 
@@ -141,7 +142,7 @@ def user_login(request):
         else:
             # 提供的账户或者密码有问题
             print ("Invalid login details: {0}, {1}".format(username, password))
-            return HttpResponse("Invalid login details supplied.")
+            return HttpResponse("账号或密码错误！")
     # 不是Http Post 请求， 显示登录表单
     else:
         return render(request, 'rango/login.html', {})
