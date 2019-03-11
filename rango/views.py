@@ -158,7 +158,7 @@ def some_view(request):
 # 使用装饰器限制访问 (类似于中间件的功能)
 @login_required
 def restricted(request):
-    return HttpResponse("Since you're logged in, you can see this text!")
+    return render(request, 'rango/restricated.html', {})
 
 
 # 退出功能
