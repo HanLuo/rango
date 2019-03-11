@@ -17,3 +17,6 @@ python manage.py shell
     c = Category(name="test")
     c.save()
     print (Category.objects.all())
+
+// 清理cookies
+python manage.py clearsessions
