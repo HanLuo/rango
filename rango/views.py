@@ -48,7 +48,6 @@ def visitor_cookie_handler(request):
     request.session['visits'] = visits
 
 
-
 # cookies
 # def visitor_cookie_handler(request, response):
 #     print ('visitor_cookie_handler')

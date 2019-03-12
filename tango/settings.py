@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rango',
+    'registration'
 ]
 
 MIDDLEWARE = [
@@ -144,4 +145,16 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-LOGIN_URL = '/rango/login'
+# LOGIN_URL = '/rango/login'
+
+# registration 变量配置
+# 设为True 允许用户注册
+REGISTRATION_OPEN = True
+# 留一周的激活时间
+ACCOUNT_ACTIVATION_DAYS = 7
+# 设为True 注册后自动登录
+REGISTRATION_AUTO_LOGIN = True
+# 登录后呈现给用户的页面
+LOGIN_REDIRECT_URL = '/rango/'
+# 未登录以及访问需要验证身份的页面时，重定向
+LOGIN_URL = '/accounts/login/'
