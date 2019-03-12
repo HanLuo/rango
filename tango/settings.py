@@ -127,7 +127,8 @@ PASSWORD_HASHERS = (
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hans'
 
 TIME_ZONE = 'UTC'
 
@@ -155,6 +156,6 @@ ACCOUNT_ACTIVATION_DAYS = 7
 # 设为True 注册后自动登录
 REGISTRATION_AUTO_LOGIN = True
 # 登录后呈现给用户的页面
-LOGIN_REDIRECT_URL = '/rango/'
+LOGIN_REDIRECT_URL = '/rango/index'
 # 未登录以及访问需要验证身份的页面时，重定向
 LOGIN_URL = '/accounts/login/'
