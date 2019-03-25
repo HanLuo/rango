@@ -1,0 +1,608 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "request": [
+   {
+    "title": "Google Custom Search - django",
+    "totalResults": "28100000",
+    "searchTerms": "django",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "005111101559464952104:l0uzw9bmyqg"
+   }
+  ],
+  "nextPage": [
+   {
+    "title": "Google Custom Search - django",
+    "totalResults": "28100000",
+    "searchTerms": "django",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "005111101559464952104:l0uzw9bmyqg"
+   }
+  ]
+ },
+ "context": {
+  "title": "Github"
+ },
+ "searchInformation": {
+  "searchTime": 0.158038,
+  "formattedSearchTime": "0.16",
+  "totalResults": "28100000",
+  "formattedTotalResults": "28,100,000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Django: The Web framework for perfectionists with deadlines",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e: The Web framework for perfectionists with deadlines",
+   "link": "https://www.djangoproject.com/",
+   "displayLink": "www.djangoproject.com",
+   "snippet": "Django is a high-level Python Web framework that encourages rapid \ndevelopment and clean, pragmatic design. Built by experienced developers, it \ntakes care of...",
+   "htmlSnippet": "\u003cb\u003eDjango\u003c/b\u003e is a high-level Python Web framework that encourages rapid \u003cbr\u003e\ndevelopment and clean, pragmatic design. Built by experienced developers, it \u003cbr\u003e\ntakes care of&nbsp;...",
+   "cacheId": "C01O-9mb64kJ",
+   "formattedUrl": "https://www.djangoproject.com/",
+   "htmlFormattedUrl": "https://www.\u003cb\u003edjango\u003c/b\u003eproject.com/",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "copyright": "Django Software Foundation",
+      "msapplication-tilecolor": "#113228",
+      "msapplication-tileimage": "https://static.djangoproject.com/img/icon-tile.b01ac0ef9f67.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "GitHub - django/django: The Web framework for perfectionists with ...",
+   "htmlTitle": "GitHub - \u003cb\u003edjango\u003c/b\u003e/\u003cb\u003edjango\u003c/b\u003e: The Web framework for perfectionists with ...",
+   "link": "https://github.com/django/django",
+   "displayLink": "github.com",
+   "snippet": "The Web framework for perfectionists with deadlines. - django/django.",
+   "htmlSnippet": "The Web framework for perfectionists with deadlines. - \u003cb\u003edjango\u003c/b\u003e/\u003cb\u003edjango\u003c/b\u003e.",
+   "cacheId": "P6uTwnypk0wJ",
+   "formattedUrl": "https://github.com/django/django",
+   "htmlFormattedUrl": "https://github.com/\u003cb\u003edjango\u003c/b\u003e/\u003cb\u003edjango\u003c/b\u003e",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-4F3q4PgzJUfNAemNJJeHR04A6ei3T-7A0xsNo1uWCXvhkttfPttHvQ"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width",
+      "fb:app_id": "1401488693436528",
+      "og:image": "https://avatars1.githubusercontent.com/u/27804?s=400&v=4",
+      "og:site_name": "GitHub",
+      "og:type": "object",
+      "og:title": "django/django",
+      "og:url": "https://github.com/django/django",
+      "og:description": "The Web framework for perfectionists with deadlines. - django/django",
+      "pjax-timeout": "1000",
+      "request-id": "CCEA:7AFB:17B3FF9:292A58F:5C982123",
+      "octolytics-host": "collector.githubapp.com",
+      "octolytics-app-id": "github",
+      "octolytics-event-url": "https://collector.githubapp.com/github-external/browser_event",
+      "octolytics-dimension-request_id": "CCEA:7AFB:17B3FF9:292A58F:5C982123",
+      "octolytics-dimension-region_edge": "iad",
+      "octolytics-dimension-region_render": "iad",
+      "analytics-location": "/\u003cuser-name\u003e/\u003crepo-name\u003e",
+      "google-analytics": "UA-3769691-2",
+      "dimension1": "Logged Out",
+      "hostname": "github.com",
+      "expected-hostname": "github.com",
+      "js-proxy-site-detection-payload": "ODc1N2ViMjQzMGFjMTI4ZGYyYWJkYmJlNjIwNzBjZGMxMjBmYTA5ODBkMTk0NTNjNzQxNWZmZDY0ODIyZDI0OHx7InJlbW90ZV9hZGRyZXNzIjoiNjYuMjQ5LjY0LjE5MyIsInJlcXVlc3RfaWQiOiJDQ0VBOjdBRkI6MTdCM0ZGOToyOTJBNThGOjVDOTgyMTIzIiwidGltZXN0YW1wIjoxNTUzNDczODI4LCJob3N0IjoiZ2l0aHViLmNvbSJ9",
+      "enabled-features": "UNIVERSE_BANNER,MARKETPLACE_SOCIAL_PROOF,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_PLAN_RESTRICTION_EDITOR",
+      "html-safe-nonce": "5197e0fcb7c25bca055f19fe31f16595cfdade60",
+      "go-import": "github.com/django/django git https://github.com/django/django.git",
+      "octolytics-dimension-user_id": "27804",
+      "octolytics-dimension-user_login": "django",
+      "octolytics-dimension-repository_id": "4164482",
+      "octolytics-dimension-repository_nwo": "django/django",
+      "octolytics-dimension-repository_public": "true",
+      "octolytics-dimension-repository_is_fork": "false",
+      "octolytics-dimension-repository_network_root_id": "4164482",
+      "octolytics-dimension-repository_network_root_nwo": "django/django",
+      "octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown": "false",
+      "browser-stats-url": "https://api.github.com/_private/browser/stats",
+      "browser-errors-url": "https://api.github.com/_private/browser/errors",
+      "theme-color": "#1e2327"
+     }
+    ],
+    "listitem": [
+     {
+      "url": "Code",
+      "name": "Code",
+      "position": "1"
+     },
+     {
+      "url": "Pull requests 191",
+      "name": "Pull requests",
+      "position": "3"
+     }
+    ],
+    "softwaresourcecode": [
+     {
+      "author": "django",
+      "name": "django",
+      "about": "The Web framework for perfectionists with deadlines.",
+      "url": "https://www.djangoproject.com/",
+      "keywords": "Python",
+      "datemodified": "Mar 19, 2019",
+      "license": "LICENSE",
+      "text": "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Thanks for checking it out. All documentation is in the \"docs\" directory and online..."
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://avatars1.githubusercontent.com/u/27804?s=400&v=4"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django �ĵ�| Django �ĵ�| Django",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e �ĵ�| \u003cb\u003eDjango\u003c/b\u003e �ĵ�| \u003cb\u003eDjango\u003c/b\u003e",
+   "link": "https://docs.djangoproject.com/zh-hans/2.1/",
+   "displayLink": "docs.djangoproject.com",
+   "snippet": "Django �зḻ���ĵ���һ�ݸ߶ȸ������ĵ���������������ҵ��ض��Ķ�����. �̳� \nͨ���ְ��ֵط�ʽ����һ�����Ĵ���һ��Web Ӧ�á�������ѧDjango ���̣�...",
+   "htmlSnippet": "\u003cb\u003eDjango\u003c/b\u003e �зḻ���ĵ���һ�ݸ߶ȸ������ĵ���������������ҵ��ض��Ķ�����. �̳� \u003cbr\u003e\nͨ���ְ��ֵط�ʽ����һ�����Ĵ���һ��Web Ӧ�á�������ѧ\u003cb\u003eDjango\u003c/b\u003e ���̣�&nbsp;...",
+   "cacheId": "V4a9VpA1nDgJ",
+   "formattedUrl": "https://docs.djangoproject.com/zh-hans/2.1/",
+   "htmlFormattedUrl": "https://docs.\u003cb\u003edjango\u003c/b\u003eproject.com/zh-hans/2.1/",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "copyright": "Django Software Foundation",
+      "msapplication-tilecolor": "#113228",
+      "msapplication-tileimage": "https://static.djangoproject.com/img/icon-tile.b01ac0ef9f67.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django �� GitHub",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e �� GitHub",
+   "link": "https://github.com/django",
+   "displayLink": "github.com",
+   "snippet": "Django has 19 repositories available. Follow their code on GitHub.",
+   "htmlSnippet": "\u003cb\u003eDjango\u003c/b\u003e has 19 repositories available. Follow their code on GitHub.",
+   "cacheId": "PiKkVSmkumUJ",
+   "formattedUrl": "https://github.com/django",
+   "htmlFormattedUrl": "https://github.com/\u003cb\u003edjango\u003c/b\u003e",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "224",
+      "height": "224",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNl1h2xk-1VEyjcokWtcTzvi8UB0Md0SmIxE0hyNPb5O1S9QExLwuM_uRj"
+     }
+    ],
+    "code": [
+     {
+      "name": "django",
+      "coderepository": "django",
+      "description": "The Web framework for perfectionists with deadlines.",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "django-localflavor",
+      "coderepository": "django-localflavor",
+      "description": "Country-specific Django helpers, formerly of contrib fame",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "daphne",
+      "coderepository": "daphne",
+      "description": "Django Channels HTTP/WebSocket server",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "djangoproject.com",
+      "coderepository": "djangoproject.com",
+      "description": "Source code to djangoproject.com",
+      "programminglanguage": "PostScript"
+     },
+     {
+      "name": "channels",
+      "coderepository": "channels",
+      "description": "Developer-friendly asynchrony for Django",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "asgiref",
+      "coderepository": "asgiref",
+      "description": "ASGI in-memory channel layer",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "ticketbot",
+      "coderepository": "ticketbot",
+      "description": "Django's IRC ticketbot. Linkifies tickets and changesets. Hangs out in #django and #django-dev.",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "djangopeople",
+      "coderepository": "djangopeople",
+      "description": "A geographical community site for Django developers",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "djangosnippets.org",
+      "coderepository": "djangosnippets.org",
+      "description": "The code that powers djangosnippets.org, it allows users to post and share useful \"snippets\" of code.",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "channels_redis",
+      "coderepository": "channels_redis",
+      "description": "Redis channel layer backend for Django Channels",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "django-contrib-comments",
+      "coderepository": "django-contrib-comments",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "deps",
+      "coderepository": "deps",
+      "description": "Django Enhancement Proposals"
+     },
+     {
+      "name": "code.djangoproject.com",
+      "coderepository": "code.djangoproject.com",
+      "description": "Configuration for Django's Trac instance (code.djangoproject.com)",
+      "programminglanguage": "JavaScript"
+     },
+     {
+      "name": "django-docs-translations",
+      "coderepository": "django-docs-translations",
+      "description": "Translations of the Django documentation. Questions and discussions happen on https://groups.google.com/forum/#!forum/django-i18n",
+      "programminglanguage": "Makefile"
+     },
+     {
+      "name": "djangobench",
+      "coderepository": "djangobench",
+      "description": "Harness and benchmarks for evaluating Django's performance over time",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "django-formtools",
+      "coderepository": "django-formtools",
+      "description": "A set of high-level abstractions for Django forms",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "django-box",
+      "coderepository": "django-box",
+      "description": "A virtual machine in which to run the Django test suite",
+      "programminglanguage": "Python"
+     },
+     {
+      "name": "code-of-conduct",
+      "coderepository": "code-of-conduct",
+      "description": "Internal documentation of the DSF Code of Conduct committee"
+     },
+     {
+      "name": "asgi_ipc",
+      "coderepository": "asgi_ipc",
+      "description": "IPC-based ASGI channel layer",
+      "programminglanguage": "Python"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width",
+      "fb:app_id": "1401488693436528",
+      "og:image": "https://avatars2.githubusercontent.com/u/27804?s=280&v=4",
+      "og:site_name": "GitHub",
+      "og:type": "profile",
+      "og:title": "Django",
+      "og:url": "https://github.com/django",
+      "og:description": "Django has 19 repositories available. Follow their code on GitHub.",
+      "profile:username": "django",
+      "pjax-timeout": "1000",
+      "request-id": "A18B:1BC1:CD594E:17D6A7A:5C983F58",
+      "hovercard-subject-tag": "organization:27804",
+      "octolytics-host": "collector.githubapp.com",
+      "octolytics-app-id": "github",
+      "octolytics-event-url": "https://collector.githubapp.com/github-external/browser_event",
+      "octolytics-dimension-request_id": "A18B:1BC1:CD594E:17D6A7A:5C983F58",
+      "octolytics-dimension-region_edge": "iad",
+      "octolytics-dimension-region_render": "iad",
+      "analytics-location": "/\u003corg-login\u003e",
+      "google-analytics": "UA-3769691-2",
+      "dimension1": "Logged Out",
+      "hostname": "github.com",
+      "expected-hostname": "github.com",
+      "js-proxy-site-detection-payload": "MTc3MjUxNzAxNzM1MjE0NDkxNmRmYzNiZTVlNWRhYTUyYWNjOTAzNzM5ZjdhNjZkOTE0ZDlmZjMzZTNlZDk1Mnx7InJlbW90ZV9hZGRyZXNzIjoiNjYuMjQ5LjY0LjIxNCIsInJlcXVlc3RfaWQiOiJBMThCOjFCQzE6Q0Q1OTRFOjE3RDZBN0E6NUM5ODNGNTgiLCJ0aW1lc3RhbXAiOjE1NTM0ODE1NjEsImhvc3QiOiJnaXRodWIuY29tIn0=",
+      "enabled-features": "UNIVERSE_BANNER,MARKETPLACE_SOCIAL_PROOF,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_PLAN_RESTRICTION_EDITOR",
+      "html-safe-nonce": "bd32cbe7db05fee34dade63f68754647996e6188",
+      "browser-stats-url": "https://api.github.com/_private/browser/stats",
+      "browser-errors-url": "https://api.github.com/_private/browser/errors",
+      "theme-color": "#1e2327"
+     }
+    ],
+    "organization": [
+     {
+      "image": "https://avatars3.githubusercontent.com/u/27804?s=200&v=4",
+      "location": "Internet",
+      "url": "https://www.djangoproject.com/"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://avatars2.githubusercontent.com/u/27804?s=280&v=4"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e",
+   "link": "http://www.djangodesmoines.com/",
+   "displayLink": "www.djangodesmoines.com",
+   "snippet": "Django is a comfortable, brasserie-style restaurant offering everything you love \nabout French cuisine without the attitude. Classic French dishes such as Steak...",
+   "htmlSnippet": "\u003cb\u003eDjango\u003c/b\u003e is a comfortable, brasserie-style restaurant offering everything you love \u003cbr\u003e\nabout French cuisine without the attitude. Classic French dishes such as Steak&nbsp;...",
+   "cacheId": "0stolpN3FxoJ",
+   "formattedUrl": "www.djangodesmoines.com/",
+   "htmlFormattedUrl": "www.\u003cb\u003edjango\u003c/b\u003edesmoines.com/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "251",
+      "height": "201",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSC3O1fkXIxbIA7CuUzySgPd9BltSM0PeOEA3V5mjSBD9HQ9zOoaX1eyetY"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "initial-scale=1",
+      "og:site_name": "Django",
+      "og:title": "Django",
+      "og:url": "http://www.djangodesmoines.com/",
+      "og:type": "website",
+      "og:image": "http://static1.squarespace.com/static/55d7a06ee4b05b4c2077c366/t/562ffaf1e4b033c8289c8cc8/1445985013101/lunch.jpg?format=1500w",
+      "og:image:width": "1500",
+      "og:image:height": "1200",
+      "twitter:title": "Django",
+      "twitter:image": "http://static1.squarespace.com/static/55d7a06ee4b05b4c2077c366/t/562ffaf1e4b033c8289c8cc8/1445985013101/lunch.jpg?format=1500w",
+      "twitter:url": "http://www.djangodesmoines.com/",
+      "twitter:card": "summary"
+     }
+    ],
+    "webpage": [
+     {
+      "name": "Django",
+      "url": "http://www.djangodesmoines.com/",
+      "thumbnailurl": "http://static1.squarespace.com/static/55d7a06ee4b05b4c2077c366/t/562ffaf1e4b033c8289c8cc8/1445985013101/lunch.jpg?format=1500w",
+      "image": "http://static1.squarespace.com/static/55d7a06ee4b05b4c2077c366/t/562ffaf1e4b033c8289c8cc8/1445985013101/lunch.jpg?format=1500w"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "http://static1.squarespace.com/static/55d7a06ee4b05b4c2077c366/t/562ffaf1e4b033c8289c8cc8/1445985013101/lunch.jpg?format=1500w"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django �̳�| ����̳�",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e �̳�| ����̳�",
+   "link": "http://www.runoob.com/django/django-tutorial.html",
+   "displayLink": "www.runoob.com",
+   "snippet": "Django �̳�Python��������ͬ��Web ��ܡ�Django��������ѡ�������д���\n�Ե�һλ������ɹ�����վ��APP������Django�� Django��һ������Դ����...",
+   "htmlSnippet": "\u003cb\u003eDjango\u003c/b\u003e �̳�Python��������ͬ��Web ��ܡ�\u003cb\u003eDjango\u003c/b\u003e��������ѡ�������д���\u003cbr\u003e\n�Ե�һλ������ɹ�����վ��APP������\u003cb\u003eDjango\u003c/b\u003e�� \u003cb\u003eDjango\u003c/b\u003e��һ������Դ����&nbsp;...",
+   "cacheId": "v0H6JjH51fgJ",
+   "formattedUrl": "www.runoob.com/django/django-tutorial.html",
+   "htmlFormattedUrl": "www.runoob.com/\u003cb\u003edjango\u003c/b\u003e/\u003cb\u003edjango\u003c/b\u003e-tutorial.html",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "220",
+      "height": "100",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQElEDaP0KouSPqI3fVMVtjPcU1M_1A1r7X5eyOsovF_kwR0aeO5Ewqmw"
+     }
+    ],
+    "metatags": [
+     {
+      "qc:admins": "465267610762567726375",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "apple-mobile-web-app-title": "����̳�"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "http://www.runoob.com/wp-content/uploads/2015/01/django.jpg"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django - ά���ٿƣ����ɵİٿ�ȫ��",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e - ά���ٿƣ����ɵİٿ�ȫ��",
+   "link": "https://zh.wikipedia.org/zh-hans/Django",
+   "displayLink": "zh.wikipedia.org",
+   "snippet": "Django��һ������Դ�����WebӦ�ÿ�ܣ���Pythonд�ɡ�������MVT���������\nģʽ����ģ��Model����ͼView��ģ��Template��������Ǳ����������ڹ�������˹\n...",
+   "htmlSnippet": "\u003cb\u003eDjango\u003c/b\u003e��һ������Դ�����WebӦ�ÿ�ܣ���Pythonд�ɡ�������MVT���������\u003cbr\u003e\nģʽ����ģ��Model����ͼView��ģ��Template��������Ǳ����������ڹ�������˹\u003cbr\u003e\n&nbsp;...",
+   "cacheId": "cGPKUnikIdIJ",
+   "formattedUrl": "https://zh.wikipedia.org/zh-hans/Django",
+   "htmlFormattedUrl": "https://zh.wikipedia.org/zh-hans/\u003cb\u003eDjango\u003c/b\u003e",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "117",
+      "height": "41",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xOEdmS0y8qOlNkWSezItwUhCzE8Y8yOxBSHD3P5lXNpAPKpXxtug"
+     }
+    ],
+    "metatags": [
+     {
+      "referrer": "origin",
+      "og:image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Django_logo.png"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Django_logo.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django Unchained (2012) - IMDb",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e Unchained (2012) - IMDb",
+   "link": "https://www.imdb.com/title/tt1853728/",
+   "displayLink": "www.imdb.com",
+   "snippet": "Jamie Foxx and Kerry Washington at an event for Django Unchained (2012) \nRobert Richardson in Django Unchained (2012) Jamie Foxx and Kerry \nWashington...",
+   "htmlSnippet": "Jamie Foxx and Kerry Washington at an event for \u003cb\u003eDjango\u003c/b\u003e Unchained (2012) \u003cbr\u003e\nRobert Richardson in \u003cb\u003eDjango\u003c/b\u003e Unchained (2012) Jamie Foxx and Kerry \u003cbr\u003e\nWashington&nbsp;...",
+   "cacheId": "TQC8x82iZPAJ",
+   "formattedUrl": "https://www.imdb.com/title/tt1853728/",
+   "htmlFormattedUrl": "https://www.imdb.com/title/tt1853728/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "163",
+      "height": "310",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4YxI27UHowb6t0wkXGNOH6QM3gVDkJHV_Ck-ZBjzuLiTSArh0BYG4Kj0"
+     }
+    ],
+    "aggregaterating": [
+     {
+      "ratingvalue": "8.4",
+      "bestrating": "10",
+      "ratingcount": "1,192,290",
+      "reviewcount": "1,330 user"
+     }
+    ],
+    "metatags": [
+     {
+      "apple-itunes-app": "app-id=342792525, app-argument=imdb:///title/tt1853728?src=mdot",
+      "og:url": "http://www.imdb.com/title/tt1853728/",
+      "theme-color": "#000000",
+      "pageid": "tt1853728",
+      "pagetype": "title",
+      "subpagetype": "main",
+      "og:image": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UY1200_CR90,0,630,1200_AL_.jpg",
+      "og:type": "video.movie",
+      "fb:app_id": "115109575169727",
+      "og:title": "Django Unchained (2012) - IMDb",
+      "og:site_name": "IMDb",
+      "title": "Django Unchained (2012) - IMDb",
+      "og:description": "Directed by Quentin Tarantino.  With Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington. With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+      "request_id": "GSEG176SFZ7291T9TE5K"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UY1200_CR90,0,630,1200_AL_.jpg"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django Reinhardt - Wikipedia",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e Reinhardt - Wikipedia",
+   "link": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "Jean Reinhardt (23 January 1910 �C 16 May 1953) stage name Django Reinhardt \nwas a Belgian-born Romani-French jazz guitarist and composer, regarded as...",
+   "htmlSnippet": "Jean Reinhardt (23 January 1910 �C 16 May 1953) stage name \u003cb\u003eDjango\u003c/b\u003e Reinhardt \u003cbr\u003e\nwas a Belgian-born Romani-French jazz guitarist and composer, regarded as&nbsp;...",
+   "cacheId": "h9RvD_5ulR8J",
+   "formattedUrl": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+   "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eDjango\u003c/b\u003e_Reinhardt",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "202",
+      "height": "249",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5bQS-TwjvgRzhTnz7z_OsvhQIRL5ROwWy3d54dSYc6jKiFO4g0YewP_hW"
+     }
+    ],
+    "metatags": [
+     {
+      "referrer": "origin",
+      "og:image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Django_Reinhardt_%28Gottlieb_07301%29.jpg"
+     }
+    ],
+    "hcard": [
+     {
+      "fn": "Django Reinhardt",
+      "nickname": "Jean Reinhardt",
+      "bday": "1910-01-23",
+      "role": "Guitarist, composer",
+      "note": "Guitar, violin, banjo"
+     },
+     {
+      "fn": "Django Reinhardt"
+     }
+    ],
+    "person": [
+     {
+      "role": "Guitarist, composer"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Django_Reinhardt_%28Gottlieb_07301%29.jpg"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Django REST framework: Home",
+   "htmlTitle": "\u003cb\u003eDjango\u003c/b\u003e REST framework: Home",
+   "link": "https://www.django-rest-framework.org/",
+   "displayLink": "www.django-rest-framework.org",
+   "snippet": "Django REST framework is a powerful and flexible toolkit for building Web APIs. \nSome reasons you might want to use REST framework: The Web browsable API\n...",
+   "htmlSnippet": "\u003cb\u003eDjango\u003c/b\u003e REST framework is a powerful and flexible toolkit for building Web APIs. \u003cbr\u003e\nSome reasons you might want to use REST framework: The Web browsable API\u003cbr\u003e\n&nbsp;...",
+   "cacheId": "TEMNs0euiS4J",
+   "formattedUrl": "https://www.django-rest-framework.org/",
+   "htmlFormattedUrl": "https://www.\u003cb\u003edjango\u003c/b\u003e-rest-framework.org/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "338",
+      "height": "149",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVTsSj9dchkDR5e35IcKvXb7twTRo86KK8fc7tPUI7ZHhmgIPkZ-l4-X0"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "author": "Tom Christie"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.django-rest-framework.org/img/logo.png"
+     }
+    ]
+   }
+  }
+ ]
+}

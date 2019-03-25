@@ -4,6 +4,8 @@ import urllib.request
 import os
 import socket
 
+# Google Customer Search API
+# 参考 https://blog.csdn.net/yjn03151111/article/details/41492461
 
 def read_google_key():
     google_search_key = None
@@ -53,7 +55,15 @@ def run_query(search_terms, size=10):
     # urllib.request.install_opener(opener)
     response = urllib.request.urlopen(search_url).read().decode('utf-8')
     json_response = json.loads(response)
-    
+    # path = os.path.abspath(os.path.dirname(__file__))
+    # f = open('{path}//1.txt'.format(path=path), 'w')
+    # repal = response.replace(u'\xa0', u'')
+    # f.write(repal)
+    # f.close()
+    result = []
+    for item in json_response['items']:
+        result.append({'title': item['title'], 'link': item['link']})
+    return result
 
 
 if __name__ == "__main__":
