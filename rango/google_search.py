@@ -63,6 +63,7 @@ def run_query(search_terms, size=10):
     result = []
     for item in json_response['items']:
         result.append({'title': item['title'], 'link': item['link']})
+    print (result)
     return result
 
 
