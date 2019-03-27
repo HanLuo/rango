@@ -15,6 +15,8 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 
+from rango.google_search import run_query
+
 
 def index(request):
     # context_dict = {'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"}
@@ -207,3 +209,13 @@ def restricted(request):
 def user_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('index'))
+
+def search(request):
+    result_list = []
+
+    if request.method == "POST":
+        query = request.POST['query'].strip()
+        if query:
+            result_list = run_query(query)
+    
+    return render(request, 'rango/search.html', {'result_list': result_list})
