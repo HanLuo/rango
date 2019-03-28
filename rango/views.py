@@ -16,6 +16,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 
 from rango.google_search import run_query
+from django.shortcuts import redirect
 
 
 def index(request):
@@ -220,3 +221,19 @@ def search(request):
             result_list = run_query(query)
     
     return render(request, 'rango/search.html', {'result_list': result_list, 'query':query})
+
+# 记录网页的访问次数
+def track_url(request):
+    page_id = None
+    url = '/rango/'
+    if request.method == 'GET':
+        if 'page_id' in request.GET:
+            page_id = request.GET['page_id']
+            try:
+                page = Page.objects.get(id = page_id)
+                page.views = page.views + 1
+                page.save()
+                url = page.url
+            except:
+                pass
+    return redirect(url)

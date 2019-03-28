@@ -13,4 +13,5 @@ urlpatterns = [
     # path('logout', views.user_logout, name='logout'),
     path('restricted', views.restricted, name='restricted'),
     path('search', views.search, name='search'),
+    path('goto', views.track_url, name='goto'),
 ]
