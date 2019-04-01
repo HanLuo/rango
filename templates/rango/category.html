@@ -10,6 +10,14 @@
         <h1> {{category.name}} </h1>
 
         {% if pages %}
+            <div>
+                <strong id="like_count">{{ category.likes}}</strong> people like this category
+                {% if user.is_authenticated %}
+                    <button id="likes" data-catid="{{category.id}}" class="btn btn-primary btn-sm" type="button">
+                        like
+                    </button>
+                {% endif %}
+            </div>
             <ul>
                 {% for page in pages %}
                     <li>
