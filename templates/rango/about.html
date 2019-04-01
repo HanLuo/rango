@@ -7,29 +7,12 @@
 
 {% block body_block %}
     <h1> This tutorial has been put together by {{first}} {{second}}</h1>
+    <button class="btn btn-primary" onclick="alert('using javascript.')">
+        Click Me - I run javascript
+    </button>
+    <button class="btn btn-primary" id="about-btn">Click Me - javascript speed</button>
     <img src=" {%static 'images/1.jpg' %}" /> <br />
     <img src="{{MEDIA_URL}}1.jpg" />
 {% endblock %}
-
-<!-- <!DOCTYPE html>
-
-{% load staticfiles %}
-
-<html>
-
-<head>
-    <title>About</title>
-</head>
-
-<body>
-    <h1> This tutorial has been put together by {{first}} {{second}}</h1>
-
-    <div>
-        <img src=" {%static 'images/1.jpg' %}" /> <br />
-        <img src="{{MEDIA_URL}}1.jpg" />
-    </div>
-</body>
-
-</html> -->
 
 
