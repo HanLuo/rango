@@ -83,10 +83,10 @@ def show_category(request, category_name_slug):
         pages = Page.objects.filter(category=category).order_by('-views')
         context_dict['pages'] = pages
         context_dict['category'] = category
+        context_dict['query'] = category.name
     except Category.DoesNotExist:
         context_dict['category'] = None
         context_dict['pages'] = None
-    context_dict['query'] = category.name
     result_list = []
     if request.method == 'POST':
         query = request.POST['query'].strip()
