@@ -43,22 +43,22 @@
                     <a class="nav-link" href="{% url 'about' %}">About</a>
                 </li>
                 {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'restricted' %}">查看限制</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'add_category' %}">添加一个新的分类</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'auth_logout' %}?next=/rango/index">退出</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'restricted' %}">查看限制</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'add_category' %}">添加一个新的分类</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'auth_logout' %}?next=/rango/index">退出</a>
+                    </li>
                 {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'registration_register' %}">注册</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'auth_login' %}">登录</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'registration_register' %}">注册</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'auth_login' %}">登录</a>
+                    </li>
                 {% endif %}
             </ul>
         </div>
@@ -68,9 +68,19 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
-                {% block sidebar_block %}
+                <!-- {% block sidebar_block %}
                     {% get_category_list category %}
-                {% endblock %}
+                {% endblock %} -->
+                <ul class="nav nav-list flex-column">
+                    <li class="nav-item">Type to find a category</li>
+                    <form>
+                        <li class="nav-item"><input class="search-query form-control" type="text" name="suggestion" value="" id="suggestion"/>
+                        </li>
+                    </form>
+                </ul>
+                <hr>
+                <div id="cats">
+                </div>
             </div>
             <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 main">
                 {% block body_block %}
