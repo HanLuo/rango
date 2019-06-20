@@ -11,63 +11,50 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <!-- Custom styles for this template -->
   </head>
 
 
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-      <button class="navbar-toggler navbar-toggler-right hidden-lg-up" 
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a href="{% url 'index' %}">Rango</a>
 
-      <a class="navbar-brand" href="{% url 'index' %}">Rango</a>
-
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'index' %}">Index</span></a>
+      <div>
+        <ul >
+          <li>
+            <a href="{% url 'index' %}">Index</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+          <li>
+            <a href="{% url 'about' %}">About</a>
           </li>
           {% if user.is_authenticated %}
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'restricated' %}">查看限制</a>
+            <li>
+                <a href="{% url 'restricated' %}">查看限制</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'add_category '%}">添加一个新的分类</a>
+            <li>
+                <a href="{% url 'add_category '%}">添加一个新的分类</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'auth_logout' %}?next=/rango/index/">退出</a>
+            <li>
+                <a href="{% url 'auth_logout' %}?next=/rango/index/">退出</a>
             </li>
           {% else %}
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'registration_register' %}">注册</a>
+            <li>
+                <a href="{% url 'registration_register' %}">注册</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'auth_login' %}">登录</a>
+            <li>
+                <a href="{% url 'auth_login' %}">登录</a>
             </li>
           {% endif %}
         </ul>
       </div>
-    </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+    <div>
+      <div>
+        <div>
             {% block sidebar_block %}
                 {% get_category_list category %}
             {% endblock %}
         </div>
-        <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 main">
+        <div>
             {% block body_block %}
             {% endblock %}
         </div>
